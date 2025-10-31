@@ -54,6 +54,7 @@ def fetch_dogs(db):
 
         except Exception as e:
             print(f'Error: {e}')
+            db.rollback()
             continue
 
 def create_dog():
