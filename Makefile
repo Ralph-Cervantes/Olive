@@ -1,15 +1,14 @@
 .PHONY: up build down logs test-server rebuild info
 
 start:
-	@$(MAKE) build
-	@$(MAKE) up
-	@$(MAKE) remove-tables
-	@$(MAKE) create-tables
-	@$(MAKE) info
+	@$(MAKE) -s build
+	@$(MAKE) -s up
+	@$(MAKE) -s remove-tables
+	@$(MAKE) -s create-tables
+	@$(MAKE) -s info
 
 up:
 	docker compose up -d --build
-	@$(MAKE) info
 
 build:
 	docker compose build
