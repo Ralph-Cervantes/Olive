@@ -3,7 +3,8 @@
 start:
 	@$(MAKE) build
 	@$(MAKE) up
-	@$(MAKE) create_tables
+	@$(MAKE) remove-tables
+	@$(MAKE) create-tables
 	@$(MAKE) info
 
 up:
