@@ -2,9 +2,9 @@
 
 
 ## Approach 
-- To handle an unreliable external service, I dedided to create an api to handle api requests to the backend, a database 
+- To handle an unreliable external service, I decided to create an api to handle requests to the backend, a database 
 to store the external service data, and a background worker to periodically fetch, clean and populate the database. The user
-will use the client to hit our endpoint that then queries the database to ensure reliability and performance.  
+will use the client to hit our endpoints that then queries the database to ensure reliability and performance.  
 
 ## Usage: 
 Ensure docker is installed before running 
