@@ -70,7 +70,7 @@ schedule.every(5).seconds.do(create_dog)
 while True:
     schedule.run_pending()
     print("Scheduler is running...")
-    time.sleep(10)
+    time.sleep(5)
 
 
 
