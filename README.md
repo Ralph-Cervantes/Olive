@@ -9,7 +9,7 @@ Ensure docker is installed before running
 Enter the command:
 - make start
 
-Allow the background worker several seconds on spinning up to populate the database on first run.
+Allow the background worker several seconds to populate the database on the first run.
 
 Available commands 
 - make build (build the images)
